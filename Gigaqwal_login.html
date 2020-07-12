@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>GIGAQWAL.Login</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background:url("GIGAQWAL_pictures/Login_background.jpeg");
+    font-family : sans-serif;
+  }
+
+  .Login_box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content : left;
+    align-items : center;
+    padding-left:150px;
+    padding-top : 0;
+  }
+
+  form{
+  position : relative;
+  width : 100%;
+  max-width : 400px;
+  padding : 80px 40px 40px;
+  background : rgba(76,120,126,0.7);
+  border-radius : 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+
+}
+
+form img{
+  position : absolute;
+  top : -50px;
+  left : calc(50% - 50px);
+  width : 90px;
+  padding-left : 0;
+  background: rgba( 255,255,255,0.9);
+  border-radius: 50%;
+
+}
+
+form h2 {
+  text-align : center;
+  letter-spacing : 1px;
+  margin-bottom : 2rem;
+}
+
+.text_box{
+  width: 100%;
+  overflow : hidden;
+  font-size: 20px;
+  padding : 8px 0;
+  border-bottom : 1px solid #ffff;
+
+}
+
+.text_box i{
+  width : 26px;
+  float : left;
+  text-align : center;
+
+}
+
+.text_box input {
+  border : none;
+  outline : none;
+  background : none;
+  color : white;
+  font-size : 18px;
+  width : 80%;
+  float : left;
+  margin : 0 10px;
+}
+
+.btn{
+width : 20%;
+background : none;
+outline: none;
+padding : 5px;
+align-text : right;
+
+}
+
+</style>
+<body>
+  <div class="Login_box">
+  <form class="form" action="form_results.html" method="get">
+    <img src="login_logo.png" alt="">
+    <h2> Log in </h2>
+    <div class="text_box">
+      <i class="fas fa-user" aria-hidden = "true"></i>
+      <input type="text" name="Username" id = "Username" placeholder="Username" required>
+    </div>
+    <div class="text_box">
+      <i class="fas fa-lock" aria-hidden = "true"></i>
+      <input type="text" name="Password" id = "Password" placeholder="Password" required>
+    </div>
+      <input type="button" class="btn" value="Login" class="submit-button">
+    <div class="forgot_pw">
+    <a href="Forgot_pw.html" class="Forgot_pw">Forgot Password?</a>
+    </div>
+    </form>
+  </div>
+ </body>
+ </html>
